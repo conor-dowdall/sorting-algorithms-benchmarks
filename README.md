@@ -1,4 +1,4 @@
-# Conor Dowdall | Software Developer
+# Conor Dowdall | Java Developer
 
 ## A Java-Based Application to Benchmark Several Sorting Algorithms
 

@@ -35,7 +35,7 @@ public class App {
         System.out.print(String.format("%19s", "Input Size") + "\t");
         Array.toConsole(inputSizes);
 
-        // a data file name to store input sizes, mean times in nano-seconds,
+        // a data file name to store input sizes, mean times in nanoseconds,
         // and errors on the mean times - use later to plot data
         String dataFileName = "data/data_ns.csv";
         // clear file for a new run
@@ -43,7 +43,7 @@ public class App {
         // output the header containing the input sizes used
         Array.toFile(dataFileName, inputSizes, "");
 
-        // a table data file name to store input sizes, and mean times in milli-seconds
+        // a table data file name to store input sizes, and mean times in milliseconds
         // - use later to create a table
         String tableDataFileName = "data/tableData_ms.csv";
         // clear file for a new run
@@ -52,7 +52,7 @@ public class App {
         Array.toFile(tableDataFileName, inputSizes, "InputSize");
 
         // benchmark the sorters...
-        // output of data, to the terminal and relavent files,
+        // output of data, to the terminal and relevant files,
         // is done in the benchmark method
         for (Sorter sorter : sorters)
             BenchmarkSorter.benchmark(sorter, inputSizes, repetitionSampleSize, dataFileName, tableDataFileName);
